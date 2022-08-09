@@ -23,7 +23,7 @@ for name in files_:
         if point[0] <= 1. and point[1] <= 1. and point[0] > 0 and point[1] > 0:
             corners_image = cv2.circle(corners_image, (int(point[0]*W), int(point[1]*H)), 1, (0,0,255), -1)
 
-    for point in corners:
+    for point in vertices:
         if point[0] <= 1. and point[1] <= 1. and point[0] > 0 and point[1] > 0:
             vertices_image = cv2.circle(corners_image, (int(point[0]*W), int(point[1]*H)), 1, (0,0,255), -1)
 
